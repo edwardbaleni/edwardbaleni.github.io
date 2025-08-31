@@ -1,16 +1,22 @@
 import type { Site, Metadata, Socials } from "@types";
 
 export const SITE: Site = {
-  NAME: "Astro Nano",
-  EMAIL: "markhorn.dev@gmail.com",
+  NAME: "Nano", // Site name
+  EMAIL: "baleniedward@gmail.com",
   NUM_POSTS_ON_HOMEPAGE: 3,
   NUM_WORKS_ON_HOMEPAGE: 2,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
+  NUM_EDUCATION_ON_HOMEPAGE: 2,
 };
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Astro Nano is a minimal and lightweight blog and portfolio.",
+  DESCRIPTION: "Nano is a minimal and lightweight blog and portfolio.",
+};
+
+export const EDUCATION: Metadata = {
+  TITLE: "Education",
+  DESCRIPTION: "Where and what I have learnt and what I have done.",
 };
 
 export const BLOG: Metadata = {
@@ -29,16 +35,16 @@ export const PROJECTS: Metadata = {
 };
 
 export const SOCIALS: Socials = [
-  { 
-    NAME: "twitter-x",
-    HREF: "https://twitter.com/markhorn_dev",
-  },
+  // { 
+  //   NAME: "twitter-x",
+  //   HREF: "https://twitter.com/markhorn_dev",
+  // },
   { 
     NAME: "github",
-    HREF: "https://github.com/markhorn-dev"
+    HREF: "https://github.com/edwardbaleni"
   },
   { 
     NAME: "linkedin",
-    HREF: "https://www.linkedin.com/in/markhorn-dev",
+    HREF: "https://www.linkedin.com/in/edward-baleni-eb1999",
   }
 ];

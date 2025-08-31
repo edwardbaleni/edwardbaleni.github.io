@@ -6,6 +6,9 @@ import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
+import { Image } from "astro:assets";
+import heroImage from "@content/blog/05-markdown-syntax/spongebob.webp";
+import outside2 from "@../public/figures/me_concetrating.JPG";
 
 const blog = (await getCollection("blog"))
   .filter(post => !post.data.draft)
@@ -28,12 +31,26 @@ const work = await Promise.all(
   })
 );
 
----
+const alleducation = (await getCollection("education"))
+  .sort((a, b) => new Date(b.data.dateStart).valueOf() - new Date(a.data.dateStart).valueOf())
+  .slice(0,SITE.NUM_EDUCATION_ON_HOMEPAGE);
 
+const education = await Promise.all(
+  alleducation.map(async (item) => {
+    const { Content } = await item.render();
+    return { ...item, Content };
+  })
+);
+
+---
+    <div class="w-full h-50 relative mb-1">
+      <Image src={outside2} alt="Hero Image" class="w-full h-full object-cover" />
+    </div>
+    
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
     <h4 class="animate font-semibold text-black dark:text-white">
-      Hi, I'm Nano <span class="text-xl">👋🏻</span> 
+      Hi! I'm Edward Baleni <span class="text-xl">🚀</span> 
     </h4>
     <div class="space-y-16">
       <section>
@@ -62,6 +79,36 @@ const work = await Promise.all(
           </p>
         </article>
       </section>
+
+      <section class="animate space-y-6">
+        <div class="flex flex-wrap gap-y-2 items-center justify-between">
+          <h5 class="font-semibold text-black dark:text-white">
+            Education
+          </h5>
+          <Link href="/education">
+            See all education
+          </Link>
+        </div>
+       <ul class="flex flex-col space-y-4">
+          {education.map(entry => (
+            <li>
+              <div class="text-sm opacity-75">
+                {dateRange(entry.data.dateStart, entry.data.dateEnd)}
+              </div>
+              <div class="font-semibold text-black dark:text-white">
+                {entry.data.degree}
+              </div>
+              <div class="text-sm opacity-75">
+                {entry.data.institution}
+              </div>
+              <article>
+                <entry.Content />
+              </article>
+            </li>
+          ))}
+        </ul>
+      </section>
+
 
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
