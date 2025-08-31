@@ -6,6 +6,7 @@ import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS } from "@consts";
+import mainImage from "@assets/me_concentrating.jpg";
 
 const blog = (await getCollection("blog"))
   .filter(post => !post.data.draft)
@@ -41,7 +42,7 @@ const education = await Promise.all(
 
 ---
     <div class="w-full h-50 relative mb-1">
-      <img src="/whats-what/figures/me_concentrating.jpg" alt="A description of the image" class="w-full h-full object-cover">
+      <img src={mainImage.src} alt="A description of theimage" class="w-full h-full object-cover">
     </div>
     
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
