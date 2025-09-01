@@ -12,6 +12,12 @@ export const SITE: Site = {
 export const HOME: Metadata = {
   TITLE: "Home",
   DESCRIPTION: "Nano is a minimal and lightweight blog and portfolio.",
+  SKILLS: {
+    "Languages": ["Java", "Netlogo", "Python", "R", "SQL"],
+    "Software": ["AWS S3", "AWS EC2", "AWS SageMaker", "Git/Github", "Google Earth Engine API", "Flask", "Optuna", "Simul8", "QGIS"],
+    "Tools & Packages": ["caret", "geopandas", "h2o", "keras", "mlr3", "networkx", "openCV", "pyOD", "pytorch", "scikit-learn", "tensorflow"],
+    "Soft Skills": ["Communication", "Flexibility", "Patience", "Problem Solving", "Time Management"]
+  },
 };
 
 export const EDUCATION: Metadata = {
