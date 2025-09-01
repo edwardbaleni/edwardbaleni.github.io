@@ -6,7 +6,7 @@ import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
 import { SITE, HOME, SOCIALS, PUBLICATIONS } from "@consts";
-import mainImage from "@assets/me_concentrating.jpg";
+import mainImage from "@assets/LB-Photos-0022.jpg";
 
 const publications = (await getCollection("publications"))
   .filter(pub => !pub.data.draft)
@@ -144,31 +144,13 @@ const education = await Promise.all(
             See all Skills
           </Link> -->
         </div>
-    <div class="space-y-16">
-        <article class="space-y-4">
-          <p class="animate">
-            I am a minimal, seo friendly, accessible portfolio and publications for developers. 
-            I am an even more lightweight version of my popular theme
-            <Link href="https://github.com/markhorn-dev/astro-sphere" aria-label="Astro Sphere on Github" external>
-              Astro Sphere
-            </Link>.
-            I have a lighthouse scores of 100 across the board for performance, 
-            accesibility, best practices and SEO.
-          </p>
-          <p class="animate">
-            I come packed with full type safety, a sitemap, an rss feed, markdown 
-            and mdx support (use components in your markdown) through astro integrations.
-            I am styled with tailwind and come preconfigured with light, dark and 
-            system/os theme preferences out of the box.
-          </p>
-          <p class="animate">
-            Visit
-            <Link href="https://github.com/markhorn-dev/astro-nano" aria-label="Astro Nano on Github" external>
-              Astro Nano on Github
-            </Link>
-            to fork the repository, read the docs or one-click deploy on Vercel or Netlify. 
-          </p>
-        </article>
+        <div class="flex flex-wrap gap-3">
+          {HOME.RESEARCH_INTERESTS.map(interest => (
+            <div class="rounded-full border border-stone-300 dark:border-stone-700 px-4 py-2 text-sm bg-stone-100 dark:bg-stone-900 text-black dark:text-white shadow-sm transition-all duration-200 hover:bg-stone-200 hover:dark:bg-stone-800 hover:shadow-md hover:-translate-y-0.5">
+              {interest}
+            </div>
+          ))}
+        </div>
       </section>
 
       <section class="animate space-y-6">
@@ -176,9 +158,9 @@ const education = await Promise.all(
           <h5 class="font-semibold text-black dark:text-white">
             Latest publications
           </h5>
-          <Link href="/publications">
+          <!-- <Link href="/publications">
             See all publications
-          </Link>
+          </Link> -->
         </div>
         <ul class="flex flex-col gap-4">
           {publications.map(pub => (

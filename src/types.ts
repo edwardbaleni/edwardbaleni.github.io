@@ -11,6 +11,7 @@ export type Metadata = {
   TITLE: string;
   DESCRIPTION: string;
   SKILLS?: string[];
+  RESEARCH_INTERESTS?: string[];
 };
 
 export type Socials = {

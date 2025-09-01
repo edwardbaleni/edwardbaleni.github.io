@@ -18,6 +18,17 @@ export const HOME: Metadata = {
     "Tools & Packages": ["caret", "geopandas", "h2o", "keras", "mlr3", "networkx", "openCV", "pyOD", "pytorch", "scikit-learn", "tensorflow"],
     "Soft Skills": ["Communication", "Flexibility", "Patience", "Problem Solving", "Time Management"]
   },
+  RESEARCH_INTERESTS: [
+    "Machine Learning",
+    "Natural Language Processing",
+    "Computer Vision",
+    "Anomaly Detection",
+    "Agent-Based Modeling",
+    "Agricultural Technology",
+    "Data Science",
+    "Deep Learning",
+    "Stylometry"
+  ],
 };
 
 export const EDUCATION: Metadata = {
