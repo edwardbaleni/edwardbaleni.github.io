@@ -1,10 +1,18 @@
 ---
-title: "Astro Nano"
-description: "Minimal portfolio and blog build with astro and no frameworks."
+title: "Predict the President"
+description: "NLP problem of stylometry, analyzing the State of the Nation Addresses of South African presidents to identify the unique writing style of each president."
 date: "Mar 26 2024"
-demoURL: "https://astro-nano-demo.vercel.app"
-repoURL: "https://github.com/markhorn-dev/astro-nano"
+# demoURL: "https://astro-nano-demo.vercel.app"
+repoURL: "https://github.com/edwardbaleni/Predict-the-President.git"
 ---
+
+
+
+* Predict the President |https://github.com/edwardbaleni/Predict-the-President.git
+    * NLP problem of stylometry, analyzing the State of the Nation Addresses of South African presidents to identify the unique writing style of each president.
+    * Project employs machine learning algorithms, including Naive Bayes, Support Vector Machines, and Feed-Forward Neural Networks, to accurately attribute a given sentence to its corresponding president.
+
+
 
 ![Astro Nano](/astro-nano.png)
 

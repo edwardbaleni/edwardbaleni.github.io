@@ -1,8 +1,9 @@
 ---
-institution: "University of Example"
-degree: "Bachelor of Science (Honours)"
+institution: "University of Cape Town"
+degree: "Bachelors of Science Honours in Statistical Sciences"
 dateStart: "01/01/2022"
-dateEnd: "12/31/2022"
+dateEnd: "11/31/2022"
 ---
 
-Voluptatem est quaerat voluptas praesentium ipsa dolorem dignissimos nulla ratione distinctio quae maiores eligendi nostrum? Quibusdam, debitis voluptatum, lorem ipsum dolor. Sit amet consectetur adipisicing elit. Iure illo neque tempora.
+* **Coursework** -- Analytics, Artificial Intelligence, Biostatistics, Discrete Event Simulation, Likelihood Theory, Linear and Dynamic Programming, Spatial Statistics
+* **Thesis** -- Assessing the Effects of Various Sampling Schemes on Tree-Based Machine Learning Algorithms in the Presence of Spatial Dependence.

@@ -1,10 +1,18 @@
 ---
-title: "Astro Sphere"
-description: "Portfolio and blog build with astro."
+title: "CycleSim"
+description: "A road cycling simulator to enable managers to make decisions."
 date: "Mar 18 2024"
-demoURL: "https://astro-sphere-demo.vercel.app"
-repoURL: "https://github.com/markhorn-dev/astro-sphere"
+# demoURL: "https://astro-sphere-demo.vercel.app"
+repoURL: "https://github.com/edwardbaleni/ABM-CycleSim.git"
 ---
+
+* CycleSim | https://github.com/edwardbaleni/ABM-CycleSim.git
+    * Agent-based simulation emphasizes the managerial role in the context of road cycling to optimize race strategies. 
+    * Simulating peloton dynamics through migratory and flocking behaviour, the interface allows users to dispense crucial instructions and race-winning strategies while monitoring rider power output, collaboration, energy consumption and drafting coefficient of the team. 
+    * A sensitivity analysis identified superior configurations, informing strategic decisions for the manager. Providing analytical information on strategies dependent on the overall strength of the team.
+
+
+
 
 ![Astro Sphere Lighthouse Score](/astro-sphere.jpg)
 
