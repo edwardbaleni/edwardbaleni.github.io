@@ -1,6 +1,6 @@
 ---
 title: "Autonomous Anomaly Detection of Orchard Tree Crown Delineations"
-description: "Hit the ground running."
+description: "The identification of erroneous tree crown delineations."
 date: "Jul 25 2025"
 url: "https://doi.org/10.1007/978-3-031-96262-2_14"
 ---

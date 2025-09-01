@@ -5,11 +5,11 @@ import PageLayout from "@layouts/PageLayout.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { dateRange } from "@lib/utils";
-import { SITE, HOME, SOCIALS } from "@consts";
+import { SITE, HOME, SOCIALS, PUBLICATIONS } from "@consts";
 import mainImage from "@assets/me_concentrating.jpg";
 
-const blog = (await getCollection("blog"))
-  .filter(post => !post.data.draft)
+const publications = (await getCollection("publications"))
+  .filter(pub => !pub.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0,SITE.NUM_POSTS_ON_HOMEPAGE);
 
@@ -54,7 +54,7 @@ const education = await Promise.all(
       <section>
         <article class="space-y-4">
           <p class="animate">
-            I am a minimal, seo friendly, accessible portfolio and blog for developers. 
+            I am a minimal, seo friendly, accessible portfolio and publications for developers. 
             I am an even more lightweight version of my popular theme
             <Link href="https://github.com/markhorn-dev/astro-sphere" aria-label="Astro Sphere on Github" external>
               Astro Sphere
@@ -112,9 +112,9 @@ const education = await Promise.all(
           <h5 class="font-semibold text-black dark:text-white">
             Skills
           </h5>
-          <Link href="/education">
+          <!-- <Link href="/education">
             See all Skills
-          </Link>
+          </Link> -->
         </div>
         <div class="space-y-4">
           {Object.entries(HOME.SKILLS).map(([category, skills]) => (
@@ -147,7 +147,7 @@ const education = await Promise.all(
     <div class="space-y-16">
         <article class="space-y-4">
           <p class="animate">
-            I am a minimal, seo friendly, accessible portfolio and blog for developers. 
+            I am a minimal, seo friendly, accessible portfolio and publications for developers. 
             I am an even more lightweight version of my popular theme
             <Link href="https://github.com/markhorn-dev/astro-sphere" aria-label="Astro Sphere on Github" external>
               Astro Sphere
@@ -174,16 +174,16 @@ const education = await Promise.all(
       <section class="animate space-y-6">
         <div class="flex flex-wrap gap-y-2 items-center justify-between">
           <h5 class="font-semibold text-black dark:text-white">
-            Latest posts
+            Latest publications
           </h5>
-          <Link href="/blog">
-            See all posts
+          <Link href="/publications">
+            See all publications
           </Link>
         </div>
         <ul class="flex flex-col gap-4">
-          {blog.map(post => (
+          {publications.map(pub => (
             <li>
-              <ArrowCard entry={post} />
+              <ArrowCard entry={pub} />
             </li>
           ))}
         </ul>
@@ -265,3 +265,4 @@ const education = await Promise.all(
     </div>
   </Container>
 </PageLayout>
+

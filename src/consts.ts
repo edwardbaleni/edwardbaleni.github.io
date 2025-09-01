@@ -11,7 +11,7 @@ export const SITE: Site = {
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Nano is a minimal and lightweight blog and portfolio.",
+  DESCRIPTION: "Nano is a minimal and lightweight publications and portfolio.",
   SKILLS: {
     "Languages": ["Java", "Netlogo", "Python", "R", "SQL"],
     "Software": ["AWS S3", "AWS EC2", "AWS SageMaker", "Git/Github", "Google Earth Engine API", "Flask", "Optuna", "Simul8", "QGIS"],
@@ -25,11 +25,6 @@ export const EDUCATION: Metadata = {
   DESCRIPTION: "Where and what I have learnt and what I have done.",
 };
 
-export const BLOG: Metadata = {
-  TITLE: "Blog",
-  DESCRIPTION: "A collection of articles on topics I am passionate about.",
-};
-
 export const WORK: Metadata = {
   TITLE: "Work",
   DESCRIPTION: "Where I have worked and what I have done.",
@@ -38,6 +33,11 @@ export const WORK: Metadata = {
 export const PROJECTS: Metadata = {
   TITLE: "Projects",
   DESCRIPTION: "A collection of my projects, with links to repositories and demos.",
+};
+
+export const PUBLICATIONS: Metadata = {
+  TITLE: "Publications",
+  DESCRIPTION: "A collection of my academic publications.",
 };
 
 export const SOCIALS: Socials = [
