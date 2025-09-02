@@ -117,13 +117,13 @@ const education = await Promise.all(
           </Link> -->
         </div>
         <div class="space-y-4">
-          {Object.entries(HOME.SKILLS).map(([category, skills]) => (
+          {HOME.SKILLS && Object.entries(HOME.SKILLS).map(([category, skills]) => (
             <div>
               <h6 class="font-medium text-black dark:text-white mb-2">
                 {category}
               </h6>
               <div class="flex flex-wrap gap-2">
-                {skills.map(skill => (
+                {skills.map((skill: string) => (
                   <div class="rounded-full bg-secondary/20 px-4 py-2 text-sm text-secondary">
                     {skill}
                   </div>
@@ -145,7 +145,7 @@ const education = await Promise.all(
           </Link> -->
         </div>
         <div class="flex flex-wrap gap-3">
-          {HOME.RESEARCH_INTERESTS.map(interest => (
+          {HOME.RESEARCH_INTERESTS && HOME.RESEARCH_INTERESTS.map(interest => (
             <div class="rounded-full border border-stone-300 dark:border-stone-700 px-4 py-2 text-sm bg-stone-100 dark:bg-stone-900 text-black dark:text-white shadow-sm transition-all duration-200 hover:bg-stone-200 hover:dark:bg-stone-800 hover:shadow-md hover:-translate-y-0.5">
               {interest}
             </div>
