@@ -5,7 +5,8 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   // site: "https://astro-nano-demo.vercel.app",
-  site: "https://edwardbaleni.github.io",
-  base: "/whats-what",
+  site: "https://edwardbaleni.github.io/",
+  // base: "/whats-what",
+  // trailingSlash: "always",
   integrations: [mdx(), sitemap(), tailwind()],
 });
