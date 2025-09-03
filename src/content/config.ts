@@ -43,4 +43,14 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { education, publications, work, projects };
+const achievements = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    date: z.coerce.date(),
+    url: z.string().optional()
+  }),
+});
+
+export const collections = { education, publications, work, projects, achievements };

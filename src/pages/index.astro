@@ -107,32 +107,7 @@ const education = await Promise.all(
         </ul>
       </section>
     
-      <section class="animate space-y-6">
-        <div class="flex flex-wrap gap-y-2 items-center justify-between">
-          <h5 class="font-semibold text-black dark:text-white">
-            Skills
-          </h5>
-          <!-- <Link href="/education">
-            See all Skills
-          </Link> -->
-        </div>
-        <div class="space-y-4">
-          {HOME.SKILLS && Object.entries(HOME.SKILLS).map(([category, skills]) => (
-            <div>
-              <h6 class="font-medium text-black dark:text-white mb-2">
-                {category}
-              </h6>
-              <div class="flex flex-wrap gap-2">
-                {skills.map((skill: string) => (
-                  <div class="rounded-full bg-secondary/20 px-4 py-2 text-sm text-secondary">
-                    {skill}
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      
 
        
       <section class="animate space-y-6">

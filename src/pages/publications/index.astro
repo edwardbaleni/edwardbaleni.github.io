@@ -5,6 +5,17 @@ import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
 import { PUBLICATIONS } from "@consts";
 
+// Achievements
+const achievementsCollection = (await getCollection("achievements"))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const achievements = await Promise.all(
+  achievementsCollection.map(async (item) => {
+    const { Content } = await item.render();
+    return { ...item, Content };
+  })
+);
+
 const data = (await getCollection("publications"))
   .filter(post => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
@@ -28,6 +39,44 @@ const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
 <PageLayout title={PUBLICATIONS.TITLE} description={PUBLICATIONS.DESCRIPTION}>
   <Container>
     <div class="space-y-10">
+      <div class="animate font-semibold text-black dark:text-white">
+        Achievements
+      </div>
+      <ul class="flex flex-col space-y-4">
+        { 
+          achievements.map(entry => (
+            <li class="animate">
+              <div class="text-sm opacity-75">
+                {entry.data.date.getFullYear()}
+              </div>
+              <div class="font-semibold text-black dark:text-white">
+                {entry.data.url ? (
+                  <a 
+                    href={entry.data.url} 
+                    target={entry.data.url.startsWith('/') ? '_self' : '_blank'} 
+                    rel={entry.data.url.startsWith('/') ? '' : 'noopener noreferrer'}
+                    class="group hover:underline"
+                  >
+                    {entry.data.title}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="inline-block size-5 stroke-2 fill-none stroke-current -translate-y-0.5">
+                      <line x1="5" y1="12" x2="19" y2="12" class="translate-x-3 group-hover:translate-x-0 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out" />
+                      <polyline points="12 5 19 12 12 19" class="-translate-x-1 group-hover:translate-x-0 transition-transform duration-300 ease-in-out" />
+                    </svg>
+                  </a>
+                ) : (
+                  entry.data.title
+                )}
+              </div>
+              <div class="text-sm opacity-75">
+                {entry.data.description}
+              </div>
+              <article class="prose dark:prose-invert max-w-none">
+                <entry.Content />
+              </article>
+            </li>
+          ))
+        }
+      </ul>
       <div class="animate font-semibold text-black dark:text-white">
         Publications
       </div>
