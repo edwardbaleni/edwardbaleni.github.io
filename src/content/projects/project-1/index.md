@@ -2,9 +2,10 @@
 title: "CycleSim"
 description: "A road cycling simulator to enable managers to make decisions."
 date: "Sep 12 2023"
-# demoURL: "https://astro-sphere-demo.vercel.app"
 repoURL: "https://github.com/edwardbaleni/ABM-CycleSim.git"
 ---
+
+## Abstract 
 
 Road cycling is a popular sport where a group of riders start together, often with a rolling start - a race that begins whilst the cyclists are already in motion, contrasting a standing start where they commence at a standstill. The cyclists race one another to the finish line to win the race. Throughout the year, cyclists participate in many prestigious events known as classics, with some of the most renowned being: The Grand Tours (i.e. Tour de France, Giro d'Italia, Vuelta a Espana), The Monument Classics (i.e. Milan-Sanremo, Tour of Flanders, Paris-Roubaix, Liege-Bastogne-Liege, Giro di Lombardia) and The World Championships. The focus of this simulation is on the Monument Classics, which are intense one-day races, typically spanning 200km to 300km.
 
