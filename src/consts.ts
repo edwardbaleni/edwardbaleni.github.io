@@ -24,10 +24,10 @@ export const HOME: Metadata = {
     "Computer Vision",
     "Anomaly Detection",
     "Agent-Based Modeling",
-    "Agricultural Technology",
-    "Data Science",
+    "Simulation",
+    "Spatial Analysis",
     "Deep Learning",
-    "Stylometry"
+    "Optimization"
   ],
 };
 
