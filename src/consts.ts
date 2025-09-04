@@ -14,8 +14,8 @@ export const HOME: Metadata = {
   DESCRIPTION: "Nano is a minimal and lightweight publications and portfolio.",
   SKILLS: {
     "Languages": ["Java", "Netlogo", "Python", "R", "SQL"],
-    "Software": ["AWS S3", "AWS EC2", "AWS SageMaker", "Git/Github", "Google Earth Engine API", "Flask", "Optuna", "Simul8", "QGIS"],
-    "Tools & Packages": ["caret", "geopandas", "h2o", "keras", "mlr3", "networkx", "openCV", "pyOD", "pytorch", "scikit-learn", "tensorflow"],
+    "Software": ["AWS S3", "AWS EC2", "AWS SageMaker", "Docker", "Git/Github", "Google Earth Engine API", "Flask", "MLFlow", "Optuna", "Simul8", "QGIS"],
+    "Tools & Packages": [ "NumPy", "SciPy", "Pandas", "caret", "geopandas", "h2o", "keras", "mlr3", "networkx", "openCV", "pyOD", "pytorch", "scikit-learn", "tensorflow"],
     "Soft Skills": ["Communication", "Flexibility", "Patience", "Problem Solving", "Time Management"]
   },
   RESEARCH_INTERESTS: [
