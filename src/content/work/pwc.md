@@ -1,6 +1,6 @@
 ---
 company: "PricewaterhouseCoopers"
-role: "Operation Restructuring Consultant"
+role: "Operational Restructuring Consultant"
 dateStart: "2026/02/01"
 dateEnd: "Present"
 ---
