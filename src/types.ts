@@ -21,6 +21,7 @@ export type Socials = {
 }[];
 
 export type Presentations = {
+  TITLE: string;
   VENUE: string;
   YEAR: string;
   DETAIL: string;

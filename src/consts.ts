@@ -58,14 +58,16 @@ export const PUBLICATIONS: Metadata = {
 
 export const PRESENTATIONS: Presentations = [
   {
-    VENUE: "SAICSIT 2025",
+    TITLE: "Autonomous Anomaly Detection of Orchard Tree Crown Delineations",
+    VENUE: "SAICSIT",
     YEAR: "2025",
-    DETAIL: "Presented the peer-reviewed conference paper on autonomous anomaly detection of orchard tree crown delineations (Springer CCIS, vol. 2583).",
+    DETAIL: "Presented the peer-reviewed conference paper (Springer CCIS, vol. 2583).",
   },
   {
-    VENUE: "SASA 2024",
+    TITLE: "Autonomous Anomaly Detection of Orchard Tree Crown Delineations",
+    VENUE: "SASA",
     YEAR: "2024",
-    DETAIL: "Poster and abstract presentation of my master's dissertation, awarded best abstract and best academic research poster.",
+    DETAIL: "Poster and abstract presentation of the master's dissertation; awarded best abstract and best academic research poster.",
   },
 ];
 
