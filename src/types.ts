@@ -12,9 +12,16 @@ export type Metadata = {
   DESCRIPTION: string;
   SKILLS?: { [category: string]: string[] };
   RESEARCH_INTERESTS?: string[];
+  CERTIFICATIONS?: string[];
 };
 
 export type Socials = {
   NAME: string;
   HREF: string;
+}[];
+
+export type Presentations = {
+  VENUE: string;
+  YEAR: string;
+  DETAIL: string;
 }[];

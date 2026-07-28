@@ -1,23 +1,28 @@
-import type { Site, Metadata, Socials } from "@types";
+import type { Site, Metadata, Socials, Presentations } from "@types";
 
 export const SITE: Site = {
   NAME: "Edward Baleni", // Site name
   EMAIL: "baleniedward@gmail.com",
   NUM_POSTS_ON_HOMEPAGE: 3,
-  NUM_WORKS_ON_HOMEPAGE: 2,
+  NUM_WORKS_ON_HOMEPAGE: 3,
   NUM_PROJECTS_ON_HOMEPAGE: 3,
   NUM_EDUCATION_ON_HOMEPAGE: 3,
 };
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Nano is a minimal and lightweight publications and portfolio.",
+  DESCRIPTION: "Edward Baleni — data scientist and statistician working across machine learning, anomaly detection and operational restructuring.",
   SKILLS: {
     "Languages": ["Java", "Netlogo", "Python", "R", "SQL"],
-    "Software": ["AWS S3", "AWS EC2", "AWS SageMaker", "Docker", "Git/Github", "Google Earth Engine API", "Flask", "MLFlow", "Optuna", "Simul8", "QGIS"],
-    "Tools & Packages": [ "NumPy", "SciPy", "Pandas", "caret", "geopandas", "h2o", "keras", "mlr3", "networkx", "openCV", "pyOD", "pytorch", "scikit-learn", "tensorflow"],
+    "Software": ["Alteryx", "AWS S3", "AWS SageMaker", "Docker", "Git/Github", "Google Earth Engine API", "Flask", "MLFlow", "Optuna", "Simul8", "QGIS", "think-cell"],
+    "Tools & Packages": [ "NumPy", "SciPy", "Pandas", "caret", "geopandas", "h2o", "keras", "mlr3", "networkx", "openCV", "pyOD", "pytorch", "scikit-learn", "tensorflow", "XGBoost"],
     "Soft Skills": ["Communication", "Flexibility", "Patience", "Problem Solving", "Time Management"]
   },
+  CERTIFICATIONS: [
+    "Alteryx Designer Core (86%)",
+    "Microsoft Copilot",
+    "think-cell"
+  ],
   RESEARCH_INTERESTS: [
     "Machine Learning",
     "Natural Language Processing",
@@ -50,6 +55,19 @@ export const PUBLICATIONS: Metadata = {
   TITLE: "Publications",
   DESCRIPTION: "A collection of my academic publications.",
 };
+
+export const PRESENTATIONS: Presentations = [
+  {
+    VENUE: "SAICSIT 2025",
+    YEAR: "2025",
+    DETAIL: "Presented the peer-reviewed conference paper on autonomous anomaly detection of orchard tree crown delineations (Springer CCIS, vol. 2583).",
+  },
+  {
+    VENUE: "SASA 2024",
+    YEAR: "2024",
+    DETAIL: "Poster and abstract presentation of my master's dissertation, awarded best abstract and best academic research poster.",
+  },
+];
 
 export const SOCIALS: Socials = [
   // { 

@@ -1,7 +1,7 @@
 ---
 title: "Wine Not"
 description: "A blending optimisation problem contextualised for the wine industry."
-date: "Mar 18 2024"
+date: "2024/03/18"
 repoURL: "https://github.com/edwardbaleni/WineNot.git"
 ---
 

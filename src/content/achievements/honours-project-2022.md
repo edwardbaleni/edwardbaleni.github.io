@@ -1,7 +1,7 @@
 ---
 title: "1st Place in the South African Statistical Association's Honours Project Competition"
 description: "Awarded best honours thesis in the country."
-date: "2022-01-01"
+date: "2022/01/01"
 url: "/projects/project-5"
 ---
 

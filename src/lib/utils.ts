@@ -33,6 +33,10 @@ export function dateRange(startDate: Date, endDate?: Date | string): string {
     } else {
       endMonth = endDate.toLocaleString("default", { month: "short" });
       endYear = endDate.getFullYear().toString();
+      // Collapse single-month entries to one label rather than "Dec 2025 - Dec 2025"
+      if (endMonth === startMonth && endYear === startYear) {
+        return `${startMonth} ${startYear}`;
+      }
     }
   }
 
