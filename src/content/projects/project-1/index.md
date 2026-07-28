@@ -1,7 +1,7 @@
 ---
 title: "CycleSim"
 description: "A road cycling simulator to enable managers to make decisions."
-date: "Sep 12 2023"
+date: "2023/09/12"
 repoURL: "https://github.com/edwardbaleni/ABM-CycleSim.git"
 ---
 

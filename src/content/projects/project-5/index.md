@@ -1,7 +1,7 @@
 ---
 title: "Spatial Sampling Guideline (Private Repo)"
 description: "A guide for sampling in the face of spatial autocorrelation."
-date: "Apr 01 2025"
+date: "2025/04/01"
 repoURL: "https://github.com/edwardbaleni/SamplingSchemeGuideline.git"
 ---
 

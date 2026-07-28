@@ -1,7 +1,7 @@
 ---
 title: "Analysis of Football Players’ Attributes and Market Value"
 description: "Unsupervised analysis of player performance and value."
-date: "May 17 2023"
+date: "2023/05/17"
 repoURL: "https://github.com/edwardbaleni/FootballPricing.git"
 ---
 

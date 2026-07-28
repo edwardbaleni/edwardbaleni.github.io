@@ -1,7 +1,7 @@
 ---
 title: "Predict the President"
 description: "NLP problem of stylometry, analyzing the State of the Nation Addresses of South African presidents to identify the unique writing style of each president."
-date: "Oct 19 2023"
+date: "2023/10/19"
 demoURL: "https://edwardbaleni.github.io/Predict-the-President/"
 repoURL: "https://github.com/edwardbaleni/Predict-the-President.git"
 ---

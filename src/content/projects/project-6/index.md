@@ -1,7 +1,7 @@
 ---
 title: "Sentiment Analysis and Topic Modeling of South African State of the Nation Addresses (1994-2023): Exploring Presidential Sentiments and Evolving Thematic Priorities"
 description: "Exploring Presidential Sentiments and Evolving Thematic Priorities."
-date: "Oct 17 2023"
+date: "2023/10/17"
 demoURL: "https://edwardbaleni.github.io/LDA-SA/"
 repoURL: "https://github.com/edwardbaleni/LDA-SA.git"
 ---

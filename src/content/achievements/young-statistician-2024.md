@@ -1,7 +1,7 @@
 ---
 title: "1st Place in the South African Statistical Association's Young Statistician Competition"
 description: "Awarded best abstract and academic research poster for my master's dissertation."
-date: "2024-01-01"
+date: "2024/01/01"
 url: "/publications/autonomous_ad"
 ---
 
