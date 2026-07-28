@@ -3,7 +3,7 @@ import { type CollectionEntry, getCollection } from "astro:content";
 import PageLayout from "@layouts/PageLayout.astro";
 import Container from "@components/Container.astro";
 import ArrowCard from "@components/ArrowCard.astro";
-import { PUBLICATIONS } from "@consts";
+import { PUBLICATIONS, PRESENTATIONS } from "@consts";
 
 // Achievements
 const achievementsCollection = (await getCollection("achievements"))
@@ -62,6 +62,27 @@ const years = Object.keys(posts).sort((a, b) => parseInt(b) - parseInt(a));
           </section>
         ))}
       </div>
+
+      <div class="animate font-semibold text-black dark:text-white">
+        Presentations
+      </div>
+      <ul class="flex flex-col space-y-4">
+        {
+          PRESENTATIONS.map(entry => (
+            <li class="animate">
+              <div class="text-sm opacity-75">
+                {entry.YEAR}
+              </div>
+              <div class="font-semibold text-black dark:text-white">
+                {entry.VENUE}
+              </div>
+              <div class="text-sm opacity-75">
+                {entry.DETAIL}
+              </div>
+            </li>
+          ))
+        }
+      </ul>
 
           <div class="animate font-semibold text-black dark:text-white">
         Achievements
